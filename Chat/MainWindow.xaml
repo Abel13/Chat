@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Height="600" Width="1080" ResizeMode="NoResize" 
-        WindowStartupLocation="CenterScreen" WindowStyle="None">
+        WindowStartupLocation="CenterScreen" WindowStyle="None" FontFamily="Dosis">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="270"/>
@@ -74,6 +74,55 @@
                 </ListViewItem>
             </ListView>
         </StackPanel>
-        
+
+        <StackPanel Grid.Column="2" Background="White">
+            <Button HorizontalAlignment="Right" Margin="10" Style="{StaticResource MaterialDesignFlatButton}">
+                <materialDesign:PackIcon Kind="Close"/>
+            </Button>
+
+            <Border Width="150" Height="150" CornerRadius="80" BorderThickness="1" BorderBrush="Gray">
+                <Border.Background>
+                    <ImageBrush ImageSource="Assets/face1.jpg"/>
+                </Border.Background>
+            </Border>
+
+            <TextBlock Text="Aleksander Forster" HorizontalAlignment="Center" Margin="0 10 0 0" Foreground="Gray" FontSize="18" FontWeight="Bold"/>
+            <TextBlock Text="Game Designer" FontSize="13" Foreground="Gray" HorizontalAlignment="Center" Opacity="0.8"/>
+            <TextBlock Text="Shallow men believe in luck. Strong men believe in cause and effect." FontSize="8" Foreground="Gray" HorizontalAlignment="Center" Opacity="0.8"/>
+
+            <StackPanel Margin="20">
+                <StackPanel Orientation="Horizontal" Margin="0 3">
+                    <materialDesign:PackIcon Kind="Location" Foreground="Gray"/>
+                    <TextBlock Text="São Paulo, Brazil" Margin="10 0" Foreground="Gray"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 3">
+                    <materialDesign:PackIcon Kind="Cellphone" Foreground="Gray"/>
+                    <TextBlock Text="(11) 95555-5555" Margin="10 0" Foreground="Gray"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 3">
+                    <materialDesign:PackIcon Kind="Email" Foreground="Gray"/>
+                    <TextBlock Text="aforster@gmail.com" Margin="10 0" Foreground="Gray"/>
+                </StackPanel>
+            </StackPanel>
+
+            <TextBlock Text="MEDIA" Margin="20 0" Foreground="Gray"/>
+            <StackPanel Orientation="Horizontal" Margin="20 0">
+                <Border Width="50" Height="50" CornerRadius="30" Margin="5">
+                    <Border.Background>
+                        <ImageBrush ImageSource="Assets/face1.jpg"/>
+                    </Border.Background>
+                </Border>
+                <Border Width="50" Height="50" CornerRadius="30" Margin="5">
+                    <Border.Background>
+                        <ImageBrush ImageSource="Assets/face1.jpg"/>
+                    </Border.Background>
+                </Border>
+                <Border Width="50" Height="50" CornerRadius="30" Margin="5">
+                    <Border.Background>
+                        <ImageBrush ImageSource="Assets/face1.jpg"/>
+                    </Border.Background>
+                </Border>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
